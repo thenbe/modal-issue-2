@@ -8,7 +8,7 @@
 		TransitionChild
 	} from '@rgossiaux/svelte-headlessui';
 	import { goto } from '$app/navigation';
-	export let isOpen = false;
+	export let isOpen;
 
 	const handleClose = () => {
 		isOpen = false;
@@ -75,7 +75,7 @@
 						>
 							Delete
 						</button>
-						<button on:click={() => goto('/about')}> navigate Away </button>
+						<button on:click={() => goto('/about')}> NAVIGATE aWAY </button>
 					</div>
 				</div>
 			</TransitionChild>
